@@ -1,0 +1,4 @@
+/home/pcsdocker/Data/pcs_esercitazioni/esercitazione2/build/CMakeFiles/numb_es.dir
+/home/pcsdocker/Data/pcs_esercitazioni/esercitazione2/build/CMakeFiles/printer_es.dir
+/home/pcsdocker/Data/pcs_esercitazioni/esercitazione2/build/CMakeFiles/edit_cache.dir
+/home/pcsdocker/Data/pcs_esercitazioni/esercitazione2/build/CMakeFiles/rebuild_cache.dir

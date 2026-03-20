@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wshadow -Werror=vla -rdynamic -Wl,--dependency-file=CMakeFiles/printer_es.dir/link.d CMakeFiles/printer_es.dir/printer.cpp.o -o printer_es

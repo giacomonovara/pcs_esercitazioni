@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wshadow -Werror=vla -rdynamic -Wl,--dependency-file=CMakeFiles/numb_es.dir/link.d CMakeFiles/numb_es.dir/numb.cpp.o -o numb_es
