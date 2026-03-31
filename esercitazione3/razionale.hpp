@@ -106,61 +106,59 @@ public:
         return ret;
     } 
 
-    /* Implementazione canonica di *= con uno scalare */
-    razionale& operator*=(const I& s) {
-        if (num_ == 0 && den_ == 0) {
-            num_ = 0; den_ = 0; //NaN 
-        }
-        else if (den_ == 0) {
-            num_ = 1; den_ = 0; //Inf
+    /* Implementazione canonica di *= */
+    razionale& operator*=(const razionale& other) {
+        if (den_ == 0 || other.den_ == 0) {
+            if ((num_ == 0 && den_ == 0) || (other.num_ == 0 && other.den_ == 0)) {
+                num_ = 0;   den_ = 0;    //NaN
+            }
+            else {
+                num_ = 1;   den_ = 0;   //Inf
+            }
         }
         else {
-            num_ *= s;
-            riduz();
+            num_ = num_ * other.num_;
+            den_ = den_ * other.den_;
+            (*this).riduz(); 
         }
         return *this;
     }
     
-    /* Implementazione canonica del prodotto per scalare */
-    razionale operator*(const I& s) const {
-        if (num_ == 0 && den_ == 0) 
+    /* Implementazione canonica del prodotto */
+    razionale operator*(const razionale& other) const {
+        if ((num_ == 0 && den_ == 0) || (other.num_ == 0 && other.den_ == 0)) 
         {
             razionale ret = {0,0};       //caso NaN (sia numeratore che denominatore nulli)
             return ret;    //restituisco NaN
         }
-        else if (num_ != 0 && den_ == 0)
+        else if ((num_ != 0 && den_ == 0) || (other.num_ != 0 && other.den_ == 0))
         {
             razionale ret = {1,0};       //caso Inf (solo denominatore nullo)
             return ret;    //restituisco Inf
         }
-        else 
-        {
+        else {
             razionale ret = *this;
-            ret *= s;
+            ret *= other;
             ret.riduz();
             return ret;
         }
-    }
+    }  
 
-    /* Implementazione canonica di /= per scalare */
-    razionale& operator/=(const I& s) {
-        if (num_ == 0 && den_ == 0) {
-            num_ = 0; den_ = 0; //NaN 
-        }
-        else if (den_ == 0) {
-            num_ = 1; den_ = 0; //Inf
-        }
-        else {
-            den_ *= s;  //moltiplico il denominatore per lo scalare (cioè divido il numeratore)
-            riduz();
-        }
+    /* Implementazione canonica di /= */
+    razionale& operator/=(const razionale& other) {
+        razionale new_other = {0,0};
+        new_other.num_ = other.den_;
+        new_other.den_ = other.num_;
+        *this *= new_other;
         return *this;
     }
 
-    /* Implementazione canonica della divisione per scalare */
-    razionale operator/(const I& s) const {
-        razionale ret = *this;
-        ret /= s;
+    /* Implementazione canonica della divisione */
+    razionale operator/(const razionale& other) const {
+        razionale new_other={0,0};
+        new_other.num_ = other.den_;
+        new_other.den_ = other.num_;
+        razionale ret = operator*(new_other);
         return ret;
     }
 
