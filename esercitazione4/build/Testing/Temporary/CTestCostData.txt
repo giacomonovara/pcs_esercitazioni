@@ -1,0 +1,4 @@
+bubblesort 2 0.00371226
+insertionsort 2 0.0033704
+selectionsort 2 0.00289934
+---

@@ -1,0 +1,54 @@
+Start testing: Apr 11 12:00 UTC
+----------------------------------------------------------
+1/3 Testing: bubblesort
+1/3 Test: bubblesort
+Command: "/home/pcsdocker/Data/pcs_esercitazioni/esercitazione4/build/test_bubblesort"
+Directory: /home/pcsdocker/Data/pcs_esercitazioni/esercitazione4/build
+"bubblesort" start time: Apr 11 12:00 UTC
+Output:
+----------------------------------------------------------
+Baldichieri Cantarana Castellero Celle Cortandone Monale Revigliasco San Martino Tigliole Villafranca 
+Test_bubble_sort riuscito
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"bubblesort" end time: Apr 11 12:00 UTC
+"bubblesort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: insertionsort
+2/3 Test: insertionsort
+Command: "/home/pcsdocker/Data/pcs_esercitazioni/esercitazione4/build/test_insertionsort"
+Directory: /home/pcsdocker/Data/pcs_esercitazioni/esercitazione4/build
+"insertionsort" start time: Apr 11 12:00 UTC
+Output:
+----------------------------------------------------------
+Baldichieri Cantarana Castellero Celle Cortandone Monale Revigliasco San Martino Tigliole Villafranca 
+Test_insertion_sort riuscito
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"insertionsort" end time: Apr 11 12:00 UTC
+"insertionsort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: selectionsort
+3/3 Test: selectionsort
+Command: "/home/pcsdocker/Data/pcs_esercitazioni/esercitazione4/build/test_selectionsort"
+Directory: /home/pcsdocker/Data/pcs_esercitazioni/esercitazione4/build
+"selectionsort" start time: Apr 11 12:00 UTC
+Output:
+----------------------------------------------------------
+Baldichieri Cantarana Castellero Celle Cortandone Monale Revigliasco San Martino Tigliole Villafranca 
+Test_selection_sort riuscito
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"selectionsort" end time: Apr 11 12:00 UTC
+"selectionsort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 11 12:00 UTC
