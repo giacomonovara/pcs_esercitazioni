@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -rdynamic -Wl,--dependency-file=CMakeFiles/labor6.dir/link.d CMakeFiles/labor6.dir/main.cpp.o -o labor6
